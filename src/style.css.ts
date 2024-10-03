@@ -14,16 +14,24 @@ const container = style({
   flexDirection: 'column',
   gap: '1rem',
 });
-
 const box = style({
   display: 'flex',
-  padding: '1rem',
+  overflow: 'hidden',
   flexDirection: 'column',
   gap: '1rem',
   borderRadius: '1rem',
-  backgroundColor: '#F3F4F5',
+  border: '1px solid #F3F4F5',
+});
+const boxInner = style({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem',
+  padding: '1rem 1rem 0',
 });
 
+const hr = style({
+  borderBottom: '1px solid #F3F4F5',
+});
 const row = style({
   display: 'flex',
   alignItems: 'center',
@@ -42,4 +50,6 @@ export const appSt = {
   box,
   row,
   switchItem,
+  hr,
+  boxInner,
 };
